@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Instagram, Youtube, Twitter } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
@@ -8,9 +9,10 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="md:col-span-1">
-            <h3 className="font-display text-2xl text-foreground mb-3">
-              Football <span className="text-primary">AI</span>
-            </h3>
+            <div className="flex items-center gap-2 mb-3">
+              <img src={logo} alt="Football AI" className="w-10 h-10" />
+              <h3 className="font-display text-xl text-foreground">Football <span className="text-primary">AI</span></h3>
+            </div>
             <p className="text-muted-foreground text-sm leading-relaxed">
               AI-powered football training to elevate your game to the next level.
             </p>
