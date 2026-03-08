@@ -85,7 +85,7 @@ const Privacy = () => {
               <section>
                 <h2 className="font-display text-xl text-foreground mb-3">9. Contact Us</h2>
                 <p>If you have any questions about this Privacy Policy, please contact us at:</p>
-                <p className="mt-2 text-primary">support@footballai.app</p>
+                <p className="mt-2 text-primary">info@footballaimobile.com</p>
               </section>
             </div>
           </motion.div>
