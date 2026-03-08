@@ -19,7 +19,7 @@ const Navbar = () => {
           <a href="/#content" className="text-sm text-muted-foreground hover:text-primary transition-colors">Content</a>
           <Link to="/support" className="text-sm text-muted-foreground hover:text-primary transition-colors">Support</Link>
           <Button variant="hero" size="sm" asChild>
-            <a href="#" target="_blank" rel="noopener noreferrer">Download App</a>
+            <a href="https://apps.apple.com/us/app/football-ai-custom-ai-coach/id6757283802" target="_blank" rel="noopener noreferrer">Download App</a>
           </Button>
         </div>
 
@@ -36,7 +36,7 @@ const Navbar = () => {
           <a href="/#content" onClick={() => setIsOpen(false)} className="block text-sm text-muted-foreground hover:text-primary">Content</a>
           <Link to="/support" onClick={() => setIsOpen(false)} className="block text-sm text-muted-foreground hover:text-primary">Support</Link>
           <Button variant="hero" size="sm" className="w-full" asChild>
-            <a href="#" target="_blank" rel="noopener noreferrer">Download App</a>
+            <a href="https://apps.apple.com/us/app/football-ai-custom-ai-coach/id6757283802" target="_blank" rel="noopener noreferrer">Download App</a>
           </Button>
         </div>
       )}

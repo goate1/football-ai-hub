@@ -20,7 +20,7 @@ const CTASection = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="hero" size="lg" asChild>
-              <a href="#" target="_blank" rel="noopener noreferrer" className="gap-2">
+              <a href="https://apps.apple.com/us/app/football-ai-custom-ai-coach/id6757283802" target="_blank" rel="noopener noreferrer" className="gap-2">
                 <Apple className="w-5 h-5" />
                 Download on iOS
               </a>
