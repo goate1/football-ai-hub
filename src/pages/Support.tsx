@@ -73,7 +73,7 @@ const Support = () => {
           {/* Contact options */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20 max-w-4xl mx-auto">
             {[
-              { icon: Mail, title: "Email Us", desc: "support@footballai.app", href: "mailto:support@footballai.app" },
+              { icon: Mail, title: "Email Us", desc: "info@footballaimobile.com", href: "mailto:info@footballaimobile.com" },
               { icon: MessageCircle, title: "Live Chat", desc: "Available in the app", href: "#" },
               { icon: HelpCircle, title: "FAQ", desc: "Find answers below", href: "#faq" },
             ].map((item, i) => (
