@@ -56,7 +56,7 @@ const ContentSection = () => {
           className="text-center mb-12"
         >
           <p className="text-primary font-display text-sm uppercase tracking-[0.3em] mb-2">🎥 Featured Content</p>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">
+           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">
             Watch & <span className="text-primary text-glow">Learn</span>
           </h2>
           <p className="text-muted-foreground text-lg">See Football AI transform training in real-time</p>
