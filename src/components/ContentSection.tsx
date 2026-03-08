@@ -103,7 +103,7 @@ const ContentSection = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">
             Influencer <span className="text-primary text-glow">Spotlight</span>
           </h2>
           <p className="text-muted-foreground text-lg">Our creators are making waves across social media</p>

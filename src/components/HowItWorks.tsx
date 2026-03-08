@@ -28,7 +28,7 @@ const HowItWorks = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">
             How It <span className="text-primary text-glow">Works</span>
           </h2>
           <p className="text-muted-foreground text-lg">Three steps to elevate your game</p>

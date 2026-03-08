@@ -12,7 +12,7 @@ const CTASection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h2 className="font-display text-4xl md:text-6xl font-bold text-foreground mb-4">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-6xl font-bold text-foreground mb-4">
             Ready to <span className="text-primary text-glow">Level Up?</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-xl mx-auto mb-8">
