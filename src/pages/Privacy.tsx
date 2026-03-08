@@ -58,7 +58,7 @@ const Privacy = () => {
 
               <section>
                 <h2 className="font-display text-xl text-foreground mb-3">5. Data Retention</h2>
-                <p>We retain your data for as long as your account is active or as needed to provide services. You may request deletion of your data at any time by contacting us at support@footballai.app.</p>
+                <p>We retain your data for as long as your account is active or as needed to provide services. You may request deletion of your data at any time by contacting us at info@footballaimobile.com.</p>
               </section>
 
               <section>
