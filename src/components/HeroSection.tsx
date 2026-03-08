@@ -34,16 +34,16 @@ const HeroSection = () => {
               Built by Ballers, for Ballers
             </motion.p>
 
-            <h1 className="font-display text-6xl md:text-7xl lg:text-8xl font-bold text-foreground leading-[0.9] mb-4">
+            <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-foreground leading-[0.9] mb-4">
               Football{" "}
               <span className="text-primary text-glow">AI</span>
             </h1>
 
-            <p className="font-display text-xl md:text-2xl text-foreground/90 mb-4">
+            <p className="font-display text-lg sm:text-xl md:text-2xl text-foreground/90 mb-4">
               Train Harder, Play Smarter
             </p>
 
-            <p className="text-muted-foreground text-base md:text-lg max-w-lg mx-auto lg:mx-0 mb-8 font-body">
+            <p className="text-muted-foreground text-sm sm:text-base md:text-lg max-w-lg mx-auto lg:mx-0 mb-8 font-body">
               Master your reads, sharpen your footwork, and dominate every position with AI-powered training that never takes a day off.
             </p>
 

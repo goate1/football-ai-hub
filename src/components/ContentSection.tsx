@@ -46,8 +46,8 @@ const ContentSection = () => {
   ];
 
   return (
-    <section id="content" className="py-24">
-      <div className="container mx-auto px-6">
+    <section id="content" className="py-16 sm:py-24">
+      <div className="container mx-auto px-4 sm:px-6">
         {/* YouTube section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -56,7 +56,7 @@ const ContentSection = () => {
           className="text-center mb-12"
         >
           <p className="text-primary font-display text-sm uppercase tracking-[0.3em] mb-2">🎥 Featured Content</p>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">
+           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">
             Watch & <span className="text-primary text-glow">Learn</span>
           </h2>
           <p className="text-muted-foreground text-lg">See Football AI transform training in real-time</p>
@@ -103,7 +103,7 @@ const ContentSection = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">
             Influencer <span className="text-primary text-glow">Spotlight</span>
           </h2>
           <p className="text-muted-foreground text-lg">Our creators are making waves across social media</p>

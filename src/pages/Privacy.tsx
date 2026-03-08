@@ -7,13 +7,13 @@ const Privacy = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       <div className="pt-24 pb-16">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             className="max-w-3xl mx-auto"
           >
-            <h1 className="font-display text-5xl md:text-6xl font-bold text-foreground mb-4 text-center">
+            <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-bold text-foreground mb-4 text-center">
               Privacy <span className="text-primary text-glow">Policy</span>
             </h1>
             <p className="text-muted-foreground text-center mb-12">Last updated: March 8, 2026</p>

@@ -46,16 +46,16 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <section id="features" className="py-24 relative">
+    <section id="features" className="py-16 sm:py-24 relative">
       <div className="absolute inset-0 hero-gradient opacity-50" />
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">
             Core <span className="text-primary text-glow">Features</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
