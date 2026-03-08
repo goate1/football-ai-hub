@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     q: "Is Football AI free?",
-    a: "Football AI offers a free tier with basic features. Premium plans unlock advanced AI film analysis, unlimited drills, and personalized coaching plans.",
+    a: "Football AI is a premium subscription app. It costs $9.99/month or $59.99/year. Premium includes AI film analysis, unlimited drills, personalized coaching plans, and full progress tracking.",
   },
   {
     q: "How does the AI film analysis work?",
@@ -73,7 +73,7 @@ const Support = () => {
           {/* Contact options */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20 max-w-4xl mx-auto">
             {[
-              { icon: Mail, title: "Email Us", desc: "support@footballai.app", href: "mailto:support@footballai.app" },
+              { icon: Mail, title: "Email Us", desc: "info@footballaimobile.com", href: "mailto:info@footballaimobile.com" },
               { icon: MessageCircle, title: "Live Chat", desc: "Available in the app", href: "#" },
               { icon: HelpCircle, title: "FAQ", desc: "Find answers below", href: "#faq" },
             ].map((item, i) => (
