@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,8 +10,9 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border">
       <div className="container mx-auto px-6 h-16 flex items-center justify-between">
-        <Link to="/" className="font-display text-xl tracking-wider text-foreground">
-          Football <span className="text-primary">AI</span>
+        <Link to="/" className="flex items-center gap-2">
+          <img src={logo} alt="Football AI" className="w-8 h-8" />
+          <span className="font-display text-lg tracking-wider text-foreground hidden sm:inline">Football <span className="text-primary">AI</span></span>
         </Link>
 
         {/* Desktop */}
