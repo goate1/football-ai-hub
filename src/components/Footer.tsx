@@ -22,7 +22,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><Link to="/" className="text-muted-foreground hover:text-primary text-sm transition-colors">Home</Link></li>
               <li><a href="#features" className="text-muted-foreground hover:text-primary text-sm transition-colors">Features</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-primary text-sm transition-colors">Download App</a></li>
+              <li><a href="https://apps.apple.com/us/app/football-ai-custom-ai-coach/id6757283802" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary text-sm transition-colors">Download App</a></li>
             </ul>
           </div>
 
