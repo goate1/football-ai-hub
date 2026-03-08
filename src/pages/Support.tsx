@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     q: "Is Football AI free?",
-    a: "Football AI offers a free tier with basic features. Premium plans unlock advanced AI film analysis, unlimited drills, and personalized coaching plans.",
+    a: "Football AI is a premium subscription app. It costs $9.99/month or $59.99/year. Premium includes AI film analysis, unlimited drills, personalized coaching plans, and full progress tracking.",
   },
   {
     q: "How does the AI film analysis work?",
