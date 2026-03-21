@@ -29,10 +29,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-<<<<<<< HEAD
-          cache: 'npm'
-=======
->>>>>>> f3a498b4bf40fa4dcbada26d243f5c9eaed0cbc0
 
       - name: Install dependencies
         run: npm install
@@ -41,27 +37,15 @@ jobs:
         run: npm run build
 
       - name: Setup Pages
-<<<<<<< HEAD
-        uses: actions/configure-pages@v4
-=======
         uses: actions/configure-pages@v5
->>>>>>> f3a498b4bf40fa4dcbada26d243f5c9eaed0cbc0
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-<<<<<<< HEAD
-          # This points to your production build folder
-          path: './dist'
-=======
           # Ensure this matches your build output folder (usually 'dist' or 'build')
           path: 'dist'
->>>>>>> f3a498b4bf40fa4dcbada26d243f5c9eaed0cbc0
 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-<<<<<<< HEAD
-=======
         
->>>>>>> f3a498b4bf40fa4dcbada26d243f5c9eaed0cbc0
