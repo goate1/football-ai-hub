@@ -41,7 +41,7 @@ const Footer = () => {
           <div>
             <h4 className="font-display text-sm uppercase tracking-wider text-foreground mb-4">Follow Us</h4>
             <div className="flex gap-4">
-              <a href="#" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://www.instagram.com/footballai1.0?igsh=bDN2Mjl3MnQ0ZzFl&utm_source=qr" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
               <a href="#" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">

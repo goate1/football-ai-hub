@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Brain, Target, Zap, BarChart3, Dumbbell, Trophy, Video, Timer } from "lucide-react";
+import { Target, Zap, BarChart3, Dumbbell, Trophy, Video } from "lucide-react";
 
 const features = [
   {
@@ -11,11 +11,6 @@ const features = [
     icon: Target,
     title: "Position-Specific Drills",
     description: "Custom training plans for QB, WR, RB, DB, LB, OL, DL — tailored to your skill level and goals.",
-  },
-  {
-    icon: Brain,
-    title: "Football IQ Training",
-    description: "Learn to read coverages, identify blitzes, and make pre-snap adjustments like the pros.",
   },
   {
     icon: Zap,
@@ -36,11 +31,6 @@ const features = [
     icon: Trophy,
     title: "Levels & Challenges",
     description: "Progress through training levels, unlock new drills, and compete in timed challenges.",
-  },
-  {
-    icon: Timer,
-    title: "Practice Tools",
-    description: "Play clock, interval timer, route trees, and situational drills to maximize every practice.",
   },
 ];
 
@@ -63,7 +53,7 @@ const FeaturesSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => (
             <motion.div
               key={feature.title}

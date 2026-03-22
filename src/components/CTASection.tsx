@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Apple, Play } from "lucide-react";
+import { Apple } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const CTASection = () => {
@@ -23,12 +23,6 @@ const CTASection = () => {
               <a href="https://apps.apple.com/us/app/football-ai-custom-ai-coach/id6757283802" target="_blank" rel="noopener noreferrer" className="gap-2">
                 <Apple className="w-5 h-5" />
                 Download on iOS
-              </a>
-            </Button>
-            <Button variant="heroOutline" size="lg" asChild>
-              <a href="#" target="_blank" rel="noopener noreferrer" className="gap-2">
-                <Play className="w-5 h-5" />
-                Get on Android
               </a>
             </Button>
           </div>
