@@ -6,6 +6,9 @@ import screenshot2 from "@/assets/screenshot-2.png";
 import screenshot3 from "@/assets/screenshot-3.png";
 import screenshot4 from "@/assets/screenshot-4.png";
 import screenshot5 from "@/assets/screenshot-5.png";
+import screenshot6 from "@/assets/screenshot-6.png";
+import screenshot7 from "@/assets/screenshot-7.png";
+import screenshot8 from "@/assets/screenshot-8.png";
 
 const screenshots = [
   { src: screenshot1, alt: "Football AI Home Screen" },
@@ -13,6 +16,9 @@ const screenshots = [
   { src: screenshot3, alt: "Position-Specific Drills" },
   { src: screenshot4, alt: "Stats & Progress Tracking" },
   { src: screenshot5, alt: "Combine Prep & Workouts" },
+  { src: screenshot6, alt: "Training Analytics" },
+  { src: screenshot7, alt: "Performance Dashboard" },
+  { src: screenshot8, alt: "Game Prep Center" },
 ];
 
 const ScreenshotCarousel = () => {
