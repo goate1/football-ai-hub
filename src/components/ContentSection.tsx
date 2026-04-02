@@ -2,22 +2,25 @@ import { motion } from "framer-motion";
 import { Instagram } from "lucide-react";
 
 const ContentSection = () => {
-  // Instagram Reels with static display
+  // Instagram Reels with static thumbnails
   const reels = [
     {
       id: "DWjfwQkihpr",
       title: "Elite QB Breakdown with Football AI",
       url: "https://www.instagram.com/reel/DWjfwQkihpr/?igsh=MXNkYmtuajhhemM0MA==",
+      thumbnail: "/reels/reel1.jpg",
     },
     {
       id: "DWjvwZdEWbx",
       title: "WR Route Running Analysis",
       url: "https://www.instagram.com/reel/DWjvwZdEWbx/?igsh=MWJhNzZjODNjZ2Fieg==",
+      thumbnail: "/reels/reel2.jpg",
     },
     {
       id: "DWmpfiYilOB",
       title: "Football AI in Action",
       url: "https://www.instagram.com/reel/DWmpfiYilOB/?igsh=MXN0OW50bWV2cDd2NQ==",
+      thumbnail: "/reels/reel3.jpg",
     },
   ];
 
@@ -73,6 +76,15 @@ const ContentSection = () => {
               className="group relative rounded-lg overflow-hidden border border-border hover:border-primary/40 transition-all h-96"
             >
               <div className="aspect-[9/16] relative flex items-center justify-center bg-gradient-to-br from-pink-600 to-purple-600 w-full h-full">
+                <img 
+                  src={reel.thumbnail} 
+                  alt={reel.title}
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    // If image fails to load, show gradient instead
+                    (e.target as HTMLImageElement).style.display = 'none';
+                  }}
+                />
                 <div className="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/50 transition-colors">
                   <div className="text-center z-10">
                     <Instagram className="w-12 h-12 text-white mx-auto mb-3" />
