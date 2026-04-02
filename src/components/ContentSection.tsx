@@ -8,19 +8,19 @@ const ContentSection = () => {
       id: "DWjfwQkihpr",
       title: "Elite QB Breakdown with Football AI",
       url: "https://www.instagram.com/reel/DWjfwQkihpr/?igsh=MXNkYmtuajhhemM0MA==",
-      thumbnail: "/reels/reel1.jpg",
+      thumbnail: "/reels/IMG_5983.png",
     },
     {
       id: "DWjvwZdEWbx",
       title: "WR Route Running Analysis",
       url: "https://www.instagram.com/reel/DWjvwZdEWbx/?igsh=MWJhNzZjODNjZ2Fieg==",
-      thumbnail: "/reels/reel2.jpg",
+      thumbnail: "/reels/IMG_5985.png",
     },
     {
       id: "DWmpfiYilOB",
       title: "Football AI in Action",
       url: "https://www.instagram.com/reel/DWmpfiYilOB/?igsh=MXN0OW50bWV2cDd2NQ==",
-      thumbnail: "/reels/reel3.jpg",
+      thumbnail: "/reels/IMG_5986.jpeg",
     },
   ];
 
