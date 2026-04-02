@@ -1,41 +1,25 @@
 import { motion } from "framer-motion";
 import { Instagram } from "lucide-react";
-import { useEffect } from "react";
 
 const ContentSection = () => {
-  // Instagram Reels
+  // Instagram Reels with static display
   const reels = [
     {
       id: "DWjfwQkihpr",
-      shortCode: "DWjfwQkihpr",
       title: "Elite QB Breakdown with Football AI",
       url: "https://www.instagram.com/reel/DWjfwQkihpr/?igsh=MXNkYmtuajhhemM0MA==",
     },
     {
       id: "DWjvwZdEWbx",
-      shortCode: "DWjvwZdEWbx",
       title: "WR Route Running Analysis",
       url: "https://www.instagram.com/reel/DWjvwZdEWbx/?igsh=MWJhNzZjODNjZ2Fieg==",
     },
     {
       id: "DWmpfiYilOB",
-      shortCode: "DWmpfiYilOB",
       title: "Football AI in Action",
       url: "https://www.instagram.com/reel/DWmpfiYilOB/?igsh=MXN0OW50bWV2cDd2NQ==",
     },
   ];
-
-  useEffect(() => {
-    // Load Instagram embed script
-    if ((window as any).instgrm) {
-      (window as any).instgrm.Embeds.process();
-    } else {
-      const script = document.createElement('script');
-      script.src = 'https://www.instagram.com/embed.js';
-      script.async = true;
-      document.body.appendChild(script);
-    }
-  }, []);
 
   const socialPosts = [
     {
@@ -77,20 +61,26 @@ const ContentSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
           {reels.map((reel, index) => (
-            <motion.div
+            <motion.a
               key={index}
+              href={reel.url}
+              target="_blank"
+              rel="noopener noreferrer"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="rounded-lg overflow-hidden border border-border"
+              className="group relative rounded-lg overflow-hidden border border-border hover:border-primary/40 transition-all h-96"
             >
-              <blockquote 
-                className="instagram-media" 
-                data-instgrm-permalink={reel.url}
-                data-instgrm-version="14"
-              />
-            </motion.div>
+              <div className="aspect-[9/16] relative flex items-center justify-center bg-gradient-to-br from-pink-600 to-purple-600 w-full h-full">
+                <div className="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/50 transition-colors">
+                  <div className="text-center z-10">
+                    <Instagram className="w-12 h-12 text-white mx-auto mb-3" />
+                    <p className="text-white text-sm font-semibold px-4">{reel.title}</p>
+                  </div>
+                </div>
+              </div>
+            </motion.a>
           ))}
         </div>
 
