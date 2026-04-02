@@ -85,12 +85,6 @@ const ContentSection = () => {
                     (e.target as HTMLImageElement).style.display = 'none';
                   }}
                 />
-                <div className="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/50 transition-colors">
-                  <div className="text-center z-10">
-                    <Instagram className="w-12 h-12 text-white mx-auto mb-3" />
-                    <p className="text-white text-sm font-semibold px-4">{reel.title}</p>
-                  </div>
-                </div>
               </div>
             </motion.a>
           ))}
