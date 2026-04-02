@@ -36,7 +36,7 @@ const Terms = () => {
                   <li><strong className="text-foreground">Monthly Plan:</strong> $9.99/month</li>
                   <li><strong className="text-foreground">Annual Plan:</strong> $59.99/year</li>
                 </ul>
-                <p className="mt-2">Subscriptions automatically renew unless canceled at least 24 hours before the end of the current billing period. You can manage and cancel your subscription through your Apple App Store or Google Play Store account settings.</p>
+                <p className="mt-2">Subscriptions automatically renew unless canceled at least 24 hours before the end of the current billing period. You can manage and cancel your subscription through your Apple App Store account settings.</p>
               </section>
 
               <section>

@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     q: "What devices is Football AI available on?",
-    a: "Football AI is available on iOS and Android. Download it from the App Store or Google Play Store.",
+    a: "Football AI is available on iOS. Download it from the App Store.",
   },
 ];
 
