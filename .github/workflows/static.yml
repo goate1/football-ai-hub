@@ -1,5 +1,5 @@
 name: Deploy static content to Pages
-    
+
 on:
   push:
     branches: ["main", "reverted-version"]
@@ -40,6 +40,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-    
-
-.
