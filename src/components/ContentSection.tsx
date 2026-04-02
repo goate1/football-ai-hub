@@ -1,28 +1,41 @@
 import { motion } from "framer-motion";
-import { Instagram, Youtube } from "lucide-react";
+import { Instagram } from "lucide-react";
+import { useEffect } from "react";
 
 const ContentSection = () => {
-  // Placeholder video/content cards — replace with real URLs
-  const videos = [
+  // Instagram Reels
+  const reels = [
     {
+      id: "DWjfwQkihpr",
+      shortCode: "DWjfwQkihpr",
       title: "Elite QB Breakdown with Football AI",
-      thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
-      url: "https://youtube.com",
-      platform: "youtube" as const,
+      url: "https://www.instagram.com/reel/DWjfwQkihpr/?igsh=MXNkYmtuajhhemM0MA==",
     },
     {
+      id: "DWjvwZdEWbx",
+      shortCode: "DWjvwZdEWbx",
       title: "WR Route Running Analysis",
-      thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
-      url: "https://youtube.com",
-      platform: "youtube" as const,
+      url: "https://www.instagram.com/reel/DWjvwZdEWbx/?igsh=MWJhNzZjODNjZ2Fieg==",
     },
     {
+      id: "DWmpfiYilOB",
+      shortCode: "DWmpfiYilOB",
       title: "Football AI in Action",
-      thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
-      url: "https://youtube.com",
-      platform: "youtube" as const,
+      url: "https://www.instagram.com/reel/DWmpfiYilOB/?igsh=MXN0OW50bWV2cDd2NQ==",
     },
   ];
+
+  useEffect(() => {
+    // Load Instagram embed script
+    if ((window as any).instgrm) {
+      (window as any).instgrm.Embeds.process();
+    } else {
+      const script = document.createElement('script');
+      script.src = 'https://www.instagram.com/embed.js';
+      script.async = true;
+      document.body.appendChild(script);
+    }
+  }, []);
 
   const socialPosts = [
     {
@@ -48,14 +61,14 @@ const ContentSection = () => {
   return (
     <section id="content" className="py-16 sm:py-24">
       <div className="container mx-auto px-4 sm:px-6">
-        {/* YouTube section */}
+        {/* Instagram Reels section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <p className="text-primary font-display text-sm uppercase tracking-[0.3em] mb-2">🎥 Featured Content</p>
+          <p className="text-primary font-display text-sm uppercase tracking-[0.3em] mb-2">📱 Instagram Reels</p>
            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">
             Watch & <span className="text-primary text-glow">Learn</span>
           </h2>
@@ -63,36 +76,21 @@ const ContentSection = () => {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
-          {videos.map((video, index) => (
-            <motion.a
+          {reels.map((reel, index) => (
+            <motion.div
               key={index}
-              href={video.url}
-              target="_blank"
-              rel="noopener noreferrer"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="group relative rounded-lg overflow-hidden border border-border hover:border-primary/40 transition-all"
+              className="rounded-lg overflow-hidden border border-border"
             >
-              <div className="aspect-video relative">
-                <img src={video.thumbnail} alt={video.title} className="w-full h-full object-cover" />
-                <div className="absolute inset-0 bg-background/60 group-hover:bg-background/40 transition-colors flex items-center justify-center">
-                  <div className="w-14 h-14 rounded-full bg-primary/90 flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <svg className="w-6 h-6 text-primary-foreground ml-1" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div className="p-4 bg-card">
-                <div className="flex items-center gap-2 mb-1">
-                  <Youtube className="w-4 h-4 text-primary" />
-                  <span className="text-xs text-muted-foreground uppercase tracking-wider">YouTube</span>
-                </div>
-                <h3 className="font-display text-sm text-foreground">{video.title}</h3>
-              </div>
-            </motion.a>
+              <blockquote 
+                className="instagram-media" 
+                data-instgrm-permalink={reel.url}
+                data-instgrm-version="14"
+              />
+            </motion.div>
           ))}
         </div>
 
